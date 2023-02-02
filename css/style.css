@@ -1,0 +1,480 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+*{margin: 0%;
+padding: 0%;}
+/*Header*/
+
+
+
+
+.header_bootstrap {
+    
+    font-size: 60px;
+    font-weight:150;
+    font-family: 'Pirata One', cursive;
+    background-image: url(../images/fondo.png);
+    background-position: center;
+    background-repeat:repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    display: grid;
+    place-items:center;
+}
+.header_bootstrap img { 
+    width: 150px;
+    height: 150px;
+}
+.header_bootstrap nav a {
+    color: rgb(255, 255, 255);
+}
+
+.header_bootstrap nav a:hover {
+    color: rgb(122, 10, 10);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.header_bootstrap img:hover { 
+transform:rotatey(360deg);;
+transition: 2s;
+animation-timing-function:ease-out;
+}
+
+
+.container-fluid {background-color: rgba(0, 0, 0, 0.726);}
+
+
+.header_bootstrap h1{
+    color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight:150;
+        font-family: 'Pirata One', cursive;
+        text-align: center;}
+
+
+.navbar-toggler-icon {
+background-color: rgba(247, 247, 247, 0.534);
+}
+
+
+body {
+    text-align: center;
+    background-image: url(../images/fondo.png);
+    background-position: center;
+    background-repeat:repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    font-family: 'Pirata One', cursive;
+    font-style:normal ;
+    color: rgb(255, 255, 255);}
+
+
+
+.main_contacto {
+    font-size: 50px;
+    font-weight:150;
+    text-align: center;
+}
+
+
+
+
+
+.hero {
+    width: 100%;
+    height: 500px;
+    font-size: 40px;
+    text-align: center;
+    font-weight:30;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "texto mapa"
+    "subtitulo subtitulo";
+    padding-bottom: 10%;
+}
+
+
+
+
+.texto_main {
+    width:75%;
+    text-align:center;
+    padding-left: 20%;
+    padding-top: 5%;
+    grid-area:texto;
+}
+
+
+/*mapa*/
+.map_div {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 500px;
+    height:500px;
+    grid-area: mapa;
+}
+
+
+
+
+.map {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+}
+
+
+
+
+/*main productos*/
+
+.productos {
+
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*flexbox productos*/
+
+.productos_contenedor {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+    flex-wrap: wrap;}
+
+
+
+
+
+
+.productos__subtitulo {
+font-size: 50px;
+font-weight:100;
+font-style:oblique ;;
+padding-top: 150px;}
+
+
+/*contenedor producto*/
+
+
+.productos_contenedor div img {
+    width: 250px;
+    height: 250px;}
+
+/*boton productos*/
+
+
+    .productos_contenedor div a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px;}
+
+/*tarjeta productos*/
+
+.productos_contenedor div{
+    border: 2px solid rgb(255, 255, 255);
+    width:250px ;
+    height:350px;
+    margin: 30px;
+    text-align: center;}
+
+/*texto tarjeta producto*/
+
+
+    .productos_contenedor div h3 {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);}
+
+    
+/*main de galeria*/
+
+    .galeria {
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+    
+
+/*subtitulo*/
+
+.subtitulo {
+        font-size: 50px;
+        font-weight:100;
+    grid-area: subtitulo;}
+
+
+    .animate__animated {
+        font-size: 50px;
+        font-weight:100;
+
+    }
+
+
+/*grid disenos disponibles*/
+
+    .galeria_disponibles {
+        text-align: center;        
+        display: grid;
+        gap: 1px;
+        grid-template-rows:auto;
+        grid-template-columns:1fr 1fr;
+        object-fit: cover;}
+
+
+
+/*grid disenos realizados*/
+
+    .galeria_1 {
+        text-align: center;        
+        display: grid;
+        gap: 1px;
+        grid-template-rows:auto;
+        grid-template-columns:1fr 1fr;
+        object-fit: cover;}
+
+
+/*margen galeria*/
+
+    .galeria div {
+        margin: 1px;
+    padding: 10px;}
+
+    .galeria div:hover {
+        margin: 1px;
+    padding: 10px;}
+
+
+
+/*borde imagen*/
+
+
+    .galeria img {
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 7px solid rgb(0, 0, 0);}
+
+
+
+
+/*Cuidados*/
+
+
+
+.cuidados_main {
+display: flex;
+flex-direction: column;
+
+
+    
+}
+
+.texto_cuidados {
+    font-size: 30px;
+    text-align:left;
+    font-weight:30;}
+    
+
+.listas_cuidados li {
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: left;
+    font-weight:40;
+}
+
+.listas_cuidados p {
+    font-size: 30px;
+    text-align:left;
+    font-weight:30;}
+
+
+.img_tat {
+    height: fit-content;
+    width: 700px;
+    border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 7px solid rgb(0, 0, 0);
+}
+
+
+
+.texto_servicios {
+    font-size: 30px;
+    text-align:center;
+    font-weight:30;
+    font-style:normal ;}
+
+
+/*redes sociales*/
+
+
+
+footer div a{ 
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight:100;
+    font-style:oblique ;}
+
+
+/*proveedores*/
+
+
+main section div a{
+    font-size: 20px;
+    font-weight:20;
+    font-style:oblique ;}
+
+/*diseno footer*/
+
+footer 
+    {
+        font-size: 40px;
+        font-weight:100;
+        font-style:oblique ;
+        text-align: center;}
+
+/*tamano logo redes*/
+
+
+footer div img {
+        width: 50px;
+        height: 50px;}
+
+/*tamano logo proveedores*/
+
+
+footer section div a img {
+            width: 300px;
+            height: 150px;}
+        
+
+/*!!!!MEDIA QUARY!!!!*/
+
+@media screen and (max-width:1100px) {
+    .hero {
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "texto"
+        "mapa"
+        "subtitulo";
+        padding-bottom:100%;
+    }
+    .texto_main {
+        padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;} 
+    .subtitulo {
+        padding-bottom: 100px;
+    }
+    p {
+        padding-bottom: 100px;
+    }
+
+    
+.img_tat {
+    height: fit-content;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 7px solid rgb(0, 0, 0);
+}
+
+    .galeria_disponibles {
+        text-align: center;        
+        display: grid;
+        gap: 1px;
+        grid-template-rows:auto;
+        grid-template-columns:1fr}
+
+    .galeria_1 {
+        text-align: center;
+        display: grid;
+        grid-template-rows:auto;
+        grid-template-columns: 1fr;}
+    .map {
+        width: 100%;
+        height:100%;
+    }
+    .map_div {width: 100%;}
+}
+
+
+@media screen and (max-width:940px) {
+    .hero {
+        padding-bottom:150%;
+}
+.productos__subtitulo {
+    padding-top: 0%;
+}
+}
+@media screen and (max-width:760px) {
+    .hero {
+        padding-bottom:190%;
+}
+
+/*!!!!MEDIA QUARY!!!!*/
+@media screen and (max-width:650px) {
+
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;}
+    .hero {
+                padding-bottom:150%;
+        }
+    .header{
+    font-size: 30px;
+    font-weight:100;}
+    .subtitulo {
+        font-size: 40px;
+    }
+    p {
+    font-size: 25px;
+    padding-bottom: 20px;}
+    .map {
+
+        width:100%;
+    }
+
+
+    
+.img_tat {
+    height: fit-content;
+    width: 340px;
+    border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 7px solid rgb(0, 0, 0);
+}
+.galeria_disponibles img {
+    width: 80%;}
+.galeria_1 img {
+    width: 80%;}
+}
+@media screen and (max-width:540px) {
+    .hero {
+        padding-bottom:210%;
+} 
+.productos {
+    padding-top: 200px ;
+}
+}}
