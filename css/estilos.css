@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.animate__animated {
+  font-size: 60px;
+  font-weight: 100; }
+
+.subtitulo {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 100;
+  grid-area: subtitulo; }
+
+.productos section .productos_contenedor, body .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+body .galeria .galeria_disponibles {
+  display: grid;
+  gap: 1px;
+  text-align: center;
+  object-fit: cover; }
+
+body {
+  text-align: center;
+  background-image: url(../images/fondo.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: "Pirata One", cursive;
+  font-style: normal;
+  color: white; }
+  body .header_bootstrap {
+    font-size: 60px;
+    font-weight: 150;
+    display: grid;
+    place-items: center; }
+    body .header_bootstrap h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: 150;
+      text-align: center; }
+    body .header_bootstrap .img_logo {
+      width: 150px;
+      height: 150px; }
+      body .header_bootstrap .img_logo:hover {
+        transform: rotatey(360deg);
+        transition: 2s;
+        animation-timing-function: ease-out; }
+    body .header_bootstrap nav .container-fluid {
+      background-color: rgba(0, 0, 0, 0.726); }
+      body .header_bootstrap nav .container-fluid .navbar-toggler-icon span {
+        background-color: rgba(0, 0, 0, 0.726); }
+      body .header_bootstrap nav .container-fluid div ul li a {
+        color: white; }
+        body .header_bootstrap nav .container-fluid div ul li a:hover {
+          color: #7a0a0a;
+          transform: scale(1.1);
+          transition: 1s; }
+
+.main_contacto {
+  font-size: 50px;
+  font-weight: 150;
+  text-align: center; }
+
+.hero {
+  width: 100%;
+  height: 500px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 30;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "texto mapa" "subtitulo subtitulo";
+  padding-bottom: 10%; }
+  .hero a {
+    display: none; }
+  .hero p {
+    padding-right: 15%;
+    padding-top: 10%;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 15%;
+    grid-area: texto; }
+  .hero .map_div {
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    grid-area: mapa; }
+    .hero .map_div .map {
+      border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border: 3px solid black;
+      width: 100%;
+      height: 100%; }
+
+.productos {
+  text-align: center;
+  text-decoration: none; }
+  .productos section .productos_subtitulo {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: oblique;
+    padding-top: 50px; }
+  .productos section .productos_contenedor {
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: space-around; }
+    .productos section .productos_contenedor div {
+      border-radius: 10px 10px 10px 10px;
+      border: 5px solid black;
+      width: 250px;
+      height: 350px;
+      margin: 30px;
+      text-align: center; }
+      .productos section .productos_contenedor div img {
+        width: 240px;
+        height: 250px; }
+      .productos section .productos_contenedor div h3 {
+        margin-bottom: 20px;
+        color: white; }
+      .productos section .productos_contenedor div a {
+        border-radius: 10px 10px 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: black;
+        padding: 5px 10px; }
+
+body .galeria {
+  text-decoration: none;
+  justify-content: center;
+  flex-direction: column; }
+  body .galeria .galeria_disponibles {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    body .galeria .galeria_disponibles div {
+      margin: 1px;
+      padding: 10px; }
+      body .galeria .galeria_disponibles div:hover {
+        transform: scale(1.1);
+        padding: 10px;
+        transition: 1s; }
+      body .galeria .galeria_disponibles div img {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 7px solid black; }
+
+.cuidados_main .texto_cuidados {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 30; }
+
+.cuidados_main .listas_cuidados li {
+  text-decoration: underline;
+  font-size: 40px;
+  text-align: left;
+  font-weight: 40; }
+
+.cuidados_main .listas_cuidados p {
+  font-size: 30px;
+  text-align: left;
+  font-weight: 30; }
+
+.cuidados_main div img {
+  height: fit-content;
+  width: 700px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 7px solid black; }
+
+footer {
+  font-size: 40px;
+  font-weight: 100;
+  font-style: oblique;
+  text-align: center; }
+
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: oblique; }
+  div a img {
+    width: 50px;
+    height: 50px; }
+
+section div a {
+  font-size: 20px;
+  font-weight: 20;
+  font-style: oblique; }
+  section div a img {
+    width: 300px;
+    height: 150px; }
+
+@media screen and (max-width: 1100px) {
+  body .galeria .galeria_disponibles {
+    grid-template-columns: 1fr 1fr; }
+  body main .subtitulo {
+    padding-bottom: 50px; }
+  body main .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto" "mapa" "subtitulo";
+    padding-bottom: 70%; }
+    body main .hero a {
+      display: none; }
+    body main .hero p {
+      padding: 0%;
+      font-size: 30px;
+      text-align: center;
+      grid-area: texto; }
+  body main section .map_div {
+    position: relative;
+    padding-bottom: 10%;
+    padding-left: 99%;
+    height: 0;
+    overflow: hidden; }
+    body main section .map_div .map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      height: fit-content;
+      width: 500px;
+      border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border: 7px solid black; } }
+
+div .img_tat {
+  height: fit-content;
+  width: 500px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 7px solid black; }
+
+@media screen and (max-width: 940px) {
+  body .galeria .galeria_disponibles {
+    grid-template-columns: 1fr; }
+  main .productos section .productos_subtitulo {
+    padding-top: 0%; }
+  main div .hero {
+    padding-bottom: 90%; }
+    main div .hero a {
+      display: none; } }
+
+@media screen and (max-width: 760px) {
+  main div .hero {
+    padding-bottom: 105%; }
+    main div .hero a {
+      display: none; } }
+
+@media screen and (max-width: 650px) {
+  header {
+    font-size: 30px;
+    font-weight: 100; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+  main p {
+    font-size: 20px;
+    padding-bottom: 20px; }
+  main .subtitulo {
+    font-size: 40px; }
+  main div .hero {
+    padding-bottom: 150%; }
+    main div .hero a {
+      display: none; }
+  main div .img_tat {
+    height: fit-content;
+    width: 340px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 7px solid black; } }
+
+@media screen and (max-width: 650px) and (max-width: 540px) {
+  main .subtitulo {
+    font-size: 30px; }
+  main .productos {
+    padding-top: 50px; }
+  main div .hero {
+    padding-bottom: 100px; }
+    main div .hero a {
+      display: block;
+      font-size: 40px;
+      padding-top: 40px;
+      width: 100%; }
+      main div .hero a:hover {
+        color: #7a0a0a;
+        transform: scale(1.1);
+        transition: 1s; }
+    main div .hero div {
+      display: none; } }

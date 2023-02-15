@@ -1,0 +1,51 @@
+//*VARIABLES*//
+
+$color-primario:black ;
+$color-secundario: rgb(122, 10, 10);
+$color-terciario: rgba(0, 0, 0, 0.726);
+$color-cuaternario: rgb(255, 255, 255);
+
+//*lISTAS*//
+
+$colores:
+black,
+rgb(122, 10, 10),
+rgba(0, 0, 0, 0.726),
+rgb(255, 255, 255);
+
+$font-size:
+50px,
+40px,
+35px,
+30px,
+60px,
+20px;
+
+
+
+//*MAPAS*//
+
+$tarjetas:(
+    tarjeta-bc: 5px solid black,
+    border-radius: 10px 10px 10px 10px,
+    ancho: 250px,
+    alto:350px,
+    ancho-imagen:240px,
+    alto-imagen:250px,
+);
+
+
+//*EXTEND*//    
+
+%flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+%grid {
+    display: grid;
+    gap: 1px;
+    text-align: center;
+    object-fit: cover;
+}
+
