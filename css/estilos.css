@@ -66,6 +66,18 @@ body {
   font-size: 50px;
   font-weight: 150;
   text-align: center; }
+  .main_contacto section div {
+    padding: 5px 10px; }
+    .main_contacto section div input {
+      border-radius: 10px 10px 10px 10px;
+      border: 3px solid black; }
+  .main_contacto button {
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    padding: 5px 10px; }
 
 .hero {
   width: 100%;

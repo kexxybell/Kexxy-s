@@ -2,6 +2,24 @@
     font-size:nth($font-size, 1);
     font-weight: 150;
     text-align: center;
+        section {
+            
+            div {
+                padding: 5px 10px;
+                input {
+                    border-radius: map-get($tarjetas, border-radius);
+                    border: 3px solid rgb(0, 0, 0);
+                }
+            }
+        }
+        button {
+            border-radius: map-get($tarjetas, border-radius);
+            color:$color-cuaternario;
+            text-decoration: none;
+            font-weight: bold;
+            background-color:$color-primario;
+            padding: 5px 10px;
+        }
     }
     .hero {
     a {
